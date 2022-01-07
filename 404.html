@@ -21,6 +21,16 @@
   <div class="nav"></div>
   <div class="header"></div>
   <script>
-    window.location = 'https://helpemployees.enjoywurk.com/help';
+    if (window.location.href.indexOf("Content/Everyday_Tasks/EverydayTasksLanding") > -1) {
+      window.location = 'https://wurkhelp.enjoywurk.com/help/using-wurk';
+    } else if (window.location.href.indexOf("Content/Everyday_Tasks/Your_Time/ClockingInandOutLanding") > -1) {
+      window.location = 'https://wurkhelp.enjoywurk.com/help/clock-in-and-clock-out';
+    } else if (window.location.href.indexOf("Content/Everyday_Tasks/Your_Time/RequestingTimeOff") > -1) {
+      window.location = 'https://wurkhelp.enjoywurk.com/help/request-time-off';
+    } else if (window.location.href.indexOf("Content/Getting%20Started/Logging") > -1) {
+      window.location = 'https://wurkhelp.enjoywurk.com/help/logging-in';
+    } else {
+      window.location = 'https://helpemployees.enjoywurk.com/help';
+    }
   </script>
 </body>
